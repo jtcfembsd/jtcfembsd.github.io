@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; URL=/" />
+  <script>
+    // Redirect to the root with the correct path
+    var pathname = window.location.pathname;
+    if (pathname !== '/') {
+      window.location.replace('/?' + pathname);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
