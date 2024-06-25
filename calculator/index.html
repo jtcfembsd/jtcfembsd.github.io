@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .field {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="container">
+        <div class="field">
+            <label for="number1">Number 1:</label>
+            <input type="number" id="number1">
+        </div>
+        <div class="field">
+            <label for="number2">Number 2:</label>
+            <input type="number" id="number2">
+        </div>
+        <div class="field">
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="add">Addition</option>
+                <option value="multiply">Multiplication</option>
+            </select>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+        <div class="field">
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+        </div>
+    </div>
+    <script>
+        function calculate() {
+            const number1 = parseFloat(document.getElementById('number1').value);
+            const number2 = parseFloat(document.getElementById('number2').value);
+            const operation = document.getElementById('operation').value;
+            let result;
+            if (operation === 'add') {
+                result = number1 + number2;
+            } else if (operation === 'multiply') {
+                result = number1 * number2;
+            }
+            document.getElementById('result').value = result;
+        }
+
+        function reset() {
+            document.getElementById('number1').value = '';
+            document.getElementById('number2').value = '';
+            document.getElementById('operation').value = 'add';
+            document.getElementById('result').value = '';
+        }
+    </script>
+</body>
+</html>
