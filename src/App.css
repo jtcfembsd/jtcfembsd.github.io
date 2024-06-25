@@ -1,0 +1,212 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* General styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-center {
+  text-align: center;
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
+  color: #333; /* Adjust as needed */
+}
+
+.content-container {
+  flex: 1;
+  margin-top: 10px; /* Adjust as needed to match the positioning of Sustainability Action Plan */
+  padding: 20px; /* Add padding to ensure content is not touching the edges */
+}
+
+/* Add this to your existing styles */
+.content-container ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text inside the list items */
+}
+
+.content-container ul li {
+  margin: 10px 0; /* Add some spacing between list items */
+}
+
+.otp-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.otp-image {
+  max-width: 30%;
+  height: auto;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.button-spacing {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.collapsible-section {
+  margin-top: 20px;
+}
+
+.section-header {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.section-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Ensure consistent styles for table headers and data cells */
+th, td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  height: 50px; /* Set a fixed height for table cells */
+}
+
+/* Set fixed widths for specific table columns */
+th:nth-child(1), td:nth-child(1) {
+  width: 10%; /* Adjust as needed */
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 20%; /* Adjust as needed */
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 50%; /* Adjust as needed */
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 20%; /* Adjust as needed */
+}
+
+/* Ensure consistent styles for input and select components within table cells */
+.table-input, .table-select {
+  width: 100%;
+  box-sizing: border-box;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 12px;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Ensure consistent styles for table rows */
+table tr {
+  display: table-row;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.table-header {
+  background-color: #f2f2f2;
+}
+
+/* Ensure consistent styles for labels */
+.text-start {
+  text-align: left;
+  display: block; /* Ensure the label spans the full width */
+  margin-bottom: 0.5rem; /* Add space between the label and input */
+}
+
+.label-bold {
+  font-weight: bold; /* Make the label text bold */
+}
+
+/* Add this to your CSS file */
+.select-container {
+  text-align: left;
+}
+
+.select-container .react-select__control {
+  width: 100%;
+}
+
+.select-container .react-select__value-container {
+  padding: 0;
+}
+
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-form .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Set a fixed width for the category select element */
+.category-select {
+  width: 300px; /* Adjust the width as needed */
+}
+
+/* In your App.css or relevant CSS file */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f1f1f1; /* Adjust as needed */
+  color: #333; /* Adjust as needed */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
