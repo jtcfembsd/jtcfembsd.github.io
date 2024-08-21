@@ -123,7 +123,7 @@ const [email, setEmail] = useState('');
       });
   
       const formattedInitiatives = Object.entries(initiativesByCategory)
-        .map(([category, initiatives]) => `${category}: ${initiatives.join(', ')}`)
+        .map(([category, initiatives]) => `${category}: ${initiatives.join('; ')}`)
         .join(' | ');
   
       fiscalYears[section.id] = formattedInitiatives;
